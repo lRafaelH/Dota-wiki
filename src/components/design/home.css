@@ -1,0 +1,21 @@
+.body {
+  background-image: url("../images/bgimg.jpg");
+  background-repeat: repeat-y;
+  background-color: #151618;
+  background-position: center;
+  clear: both;
+  min-height: 100vh;
+}
+
+#logonav {
+  padding-left: 14px;
+}
+
+#homerow {
+  margin-top: 3%;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}

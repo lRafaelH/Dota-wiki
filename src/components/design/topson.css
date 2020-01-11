@@ -1,0 +1,67 @@
+#abedb {
+  background-image: url("../images/bgimg.jpg");
+  background-repeat: repeat-y;
+  background-color: black;
+  background-position: center;
+  clear: both;
+  min-height: 150vh;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: white;
+}
+#main-bio {
+  float: left;
+  width: 70%;
+  line-height: 150%;
+}
+
+#bio-image {
+  width: 200px;
+  margin-right: 20px;
+  float: left;
+}
+p {
+  color: white;
+}
+
+#cont {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+h3 {
+  color: white;
+  padding: 1%;
+}
+
+ul {
+  display: table-row;
+  color: white;
+  list-style-type: square;
+}
+
+li {
+  margin-left: 2.5%;
+}
+
+#ach {
+  float: right;
+}
+
+th,
+tr,
+td {
+  color: white;
+}
+
+#triv {
+  margin-top: 5%;
+}
