@@ -1,5 +1,5 @@
 #abedb {
-  background-image: url("../images/bgimg.jpg");
+  /* background-image: url("../images/bgimg.jpg"); */
   background-repeat: repeat-y;
   background-color: black;
   background-position: center;
@@ -50,6 +50,7 @@ ul {
 
 li {
   margin-left: 2.5%;
+  margin-bottom: 1%;
 }
 
 #ach {

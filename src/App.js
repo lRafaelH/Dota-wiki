@@ -10,6 +10,10 @@ import europeplayers from "./components/pages/europeplayers";
 import topson from "./components/pages/seaplayers/topson";
 import miracle from "./components/pages/seaplayers/miracle";
 import w33 from "./components/pages/seaplayers/w33";
+import naplayers from "./components/pages/naplayers";
+import sumail from "./components/pages/seaplayers/sumail";
+import ppd from "./components/pages/seaplayers/ppd";
+import bsj from "./components/pages/seaplayers/bsj";
 class App extends Component {
   render() {
     return (
@@ -24,6 +28,10 @@ class App extends Component {
           <Route exact path="/topson" component={topson} />
           <Route exact path="/miracle" component={miracle} />
           <Route exact path="/w33" component={w33} />
+          <Route exact path="/naplayers" component={naplayers} />
+          <Route exact path="/sumail" component={sumail} />
+          <Route exact path="/ppd" component={ppd} />
+          <Route exact path="/bsj" component={bsj} />
         </Switch>
       </Router>
     );

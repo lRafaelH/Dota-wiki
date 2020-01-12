@@ -5,7 +5,7 @@ import "../../design/w33.css";
 class w33 extends Component {
   render() {
     return (
-      <div id="abedb" className="body">
+      <div id="abedbd" className="body">
         <Navbar bg="dark" variant="dark">
           <img
             width="30"
@@ -31,58 +31,80 @@ class w33 extends Component {
         </Navbar>
         <div id="cont">
           <section id="main-bio">
-            <h2>Abed Azel L. Yusop</h2>
+            <h2>Aliwi Omar</h2>
             <img id="bio-image" src={require("../../images/w33.jpg")}></img>
 
-            <h3>Team:Evil Geniuses</h3>
+            <h3>Team:Nigma</h3>
             <p>
-              a Filipino professional Dota 2 player who currently plays for Evil
-              Geniuses. Abed was born and raised in Dasmarinas in the province
-              of Cavite, Philippines. His parents own a small internet cafe
-              close to their home. Abed has one older brother, Ahmed Rheeza.
-              Abed started playing Dota 2 in 2014 and became known through the
-              South-East Asian MMR leaderboards with his signature heroes Meepo
-              and Invoker. In early 2015 he joined his first professional team
-              MSI-EvoGT, shortly after rebranded to Trackmate, where he competed
-              in MPGL Season 7 in March 2015 and later played alongside the
-              Australian-based squad, Can't Say Wips.[1] RR scouted him as a
-              potential player and invited him to join Execration in 2015 but
-              Abed denied the request to due to school commitments. Execration
-              contacted Abed in January 2016 and with the support from his
-              father he joined the organisation.[2][1] After failing to qualify
-              for premier events during mid 2016, he later competed at The
-              International 2016 and produced a 18-0 on Meepo against compLexity
-              Gaming during the wildcard stages, exhibiting his mechanical skill
-              reaching 1200 XPM and 900 GPM, sending compLexity to an early exit
-              in the tournament.[3] In the following round, he lost to to Escape
-              Gaming and during the Post TI6 shuffle, he won his first premier
-              tournament, beating MVP Phoenix 2-0 in the grand finals of the
-              MPGL Southeast Asian Championship on September 11, 2016. He left
-              the organization on December 30th.[4] Abed and Team Onyx qualified
-              for The Kiev Major, winning the North America Qualifier by
-              defeating complexity Gaming, with Abed's signature Meepo.[5] In
-              June 2017 Abed qualified for The International 2017 with Digital
-              Chaos, by winning the North America qualifier finals against Team
-              Freedom with 3-0.
+              w33's was born and raised in Romania with a Syrian father. Apart
+              from Romanian, w33 is proficient in both English and Arabic. He
+              began playing DotA in 2004, switching over to Dota 2 in 2011.
+              Prior to pursuing a professional DotA career, w33 studied chemical
+              engineering at university.Over time, w33 grew into a well-known
+              pubstar. He obtained the highest MMR of any player for a
+              significant amount of time, even becoming the first player to
+              breach 8000 MMR. His first team was Balkan Bears, a team that he
+              built with friends and other high-level players. Although the team
+              failed to achieve good tournament results, w33 was able to
+              showcase his exceptional ability at playing solo mid, going toe to
+              toe with some of the top-tier mids. w33 became particularly known
+              for his ability to play Meepo, who was considered a niche and
+              unconventional pick. After Balkan Bears disbanded, w33 was invited
+              to join the team MeePwn'd alongside veteran players such as H4nn1
+              and pieliedie. However, the team did not manage to produce any
+              significant results and disbanded two months after formation.
+              However, w33 did not remain teamless for long, as he quickly
+              returned to Balkan Bears. Two months later, w33 was offered to
+              join 4 Clover & Lepricon with veterans such as Pajkatt and EGM.
+              This time w33's team managed to produce some results, winning
+              minor tournaments such as GIGABYTE Challenge #15 and MSI Dragon
+              Battle 6. Three months later, w33 was invited by Puppey to be a
+              part of a rebuilt Team Secret alongside EternaLEnVy, MiSeRy and
+              pieliedie. During his time at Team Secret, w33 had large amounts
+              of success. Much of this success came from w33's solo mid play on
+              Windranger, Invoker, and Meepo. Team Secret won multiple
+              premier-level LAN events such as the MLG World Finals and the
+              Nanyang Dota 2 Championships. Although they were among the best
+              teams in the world in terms of tournament performance at the time,
+              they were upset in the first Dota 2 Major, the Frankfurt Major by
+              OG, ending up in second place. After the major, Team Secret looked
+              shaky but nevertheless continued onto the next major with the same
+              roster, the Shanghai Major, which they won handily. Despite w33's
+              solid solo mid performances during his time on the team, he was
+              removed from the team in the post-Shanghai Major reshuffle. With
+              not much time remaining before the next major's roster lock, w33
+              was considered to be among the better free agents in the
+              reshuffle. Alongside former Team Secret teammate MiSeRy, w33 was
+              invited to join the American team Digital Chaos, who were
+              rebuilding their team around the Ukrainian mid player Resolut1on.
+              Despite early exits from previous competitions prior to the The
+              International 2016, w33 believed that coming into the tournament
+              they were the underdogs.[1] He believed that as underdogs, the
+              pressure and expectation would be less and he would perform
+              better. After an eventful series, he finished runners-up in the
+              tournament, losing to Wings Gaming 3-1 in the grand finals.
+              Following the International, w33 and his team sustained mixed
+              success into the new year; victorious in ESL One Genting 2017 but
+              several underperformances during the competitive season led to the
+              departure of the team, and reformation to Thunderbirds. The
+              reformation was short-lived and w33 spent a year playing for
+              various European teams, later flying to Brazil to play for PaiN
+              Gaming in April 2018.[2]np
             </p>
-            <h2 id="triv">Trivia</h2>
+            <h2 id="trivi">Trivia</h2>
             <div id="qwe">
               <ul>
-                <li>His favorite fruit is grapes.</li>
-                <li>His favorite color is white.</li>
-                <li>His favorite dota player is s4.</li>
-                <li>Abed reached 8000 MMR on August 6th, 2016.</li>
                 <li>
-                  Abed reached 9000 MMR on March 19th, 2017, becoming the first
-                  Filipino to reach the milestone.
+                  On January 11th 2015, just one day after joining MeePwn'd, w33
+                  was caught cheating during a match in the European Elite
+                  League.[3] In the game, w33 used the cheat command -refresh,
+                  leading to the incident being referred to as "w33fresh"
                 </li>
+                <li>His favorite hero is Skywrath Mage</li>
                 <li>
-                  On June 25th, 2017, Abed became the first player to reach
-                  10,000 solo MMR.
-                </li>
-                <li>
-                  On June 18th, 2019, Abed became the first player to reach
-                  10,000 solo MMR under Valve’s new Medal system.
+                  Apart from Dota, his favorite games are Counter-Strike, which
+                  he has played since version 1.4 (2002), as well as RPGs like
+                  the Fallout series
                 </li>
               </ul>
             </div>
@@ -101,94 +123,94 @@ class w33 extends Component {
               </thead>
               <tbody>
                 <tr>
-                  <td>2019-12-22</td>
+                  <td>2019-08-25</td>
                   <td>2nd </td>
                   <td>Premier</td>
-                  <td>ONE Esports Dota 2 World Pro Invitational Singapore</td>
-                  <td>Evil Geniuses</td>
-                  <td>0 : 3</td>
-                  <td>$100,000</td>
-                </tr>
-                <tr>
-                  <td>2019-11-23</td>
-                  <td>4th</td>
-                  <td>Premier</td>
-                  <td>MDL Chengdu Major</td>
-                  <td>Evil Geniuses</td>
-                  <td>1 : 2</td>
-                  <td>$80,000</td>
-                </tr>
-                <tr>
-                  <td>2019-08-20</td>
-                  <td>13 - 16th</td>
-                  <td>Premier</td>
                   <td>The International 2019</td>
-                  <td>Fanatic</td>
-                  <td>0 : 1</td>
-                  <td>$514,951</td>
+                  <td>Team Liquid</td>
+                  <td>1 : 3</td>
+                  <td>$4,462,910</td>
                 </tr>
                 <tr>
-                  <td>2019-03-24</td>
-                  <td>3rd</td>
+                  <td>2019-06-30</td>
+                  <td>2nd</td>
                   <td>Premier</td>
-                  <td>DreamLeague Season 11</td>
-                  <td>Fanatic</td>
-                  <td>1 : 2</td>
-                  <td>$100,000</td>
+                  <td>EPICENTER Major</td>
+                  <td>Team Liquid</td>
+                  <td>2 : 3 </td>
+                  <td>$170,000</td>
                 </tr>
                 <tr>
                   <td>2018-05-27</td>
-                  <td>4th</td>
+                  <td>3rd</td>
                   <td>Premier</td>
                   <td>ESL One Birmingham 2018</td>
-                  <td>Fanatic</td>
-                  <td>1 : 2</td>
-                  <td>$60,000</td>
+                  <td>Pain Gaming</td>
+                  <td>2 : 1</td>
+                  <td>$100,000</td>
                 </tr>
                 <tr>
-                  <td>2018-03-25</td>
-                  <td>2nd</td>
-                  <td>Major</td>
-                  <td>DreamLeague Season 9</td>
-                  <td>Fanatic</td>
-                  <td>0 : 3</td>
-                  <td>$70,000</td>
-                </tr>
-                <tr>
-                  <td>2018-02-25</td>
-                  <td>4th</td>
+                  <td>22017-01-08</td>
+                  <td>1st</td>
                   <td>Premier</td>
-                  <td>ESL One Katowice 2018</td>
-                  <td>Fanatic</td>
-                  <td>1 : 2</td>
-                  <td>$80,000</td>
+                  <td>ESL One Genting 2017</td>
+                  <td>Digital Chaos</td>
+                  <td>3 : 2</td>
+                  <td>$125,000</td>
                 </tr>
                 <tr>
-                  <td>2017-12-17</td>
-                  <td>2nd</td>
-                  <td>Major</td>
-                  <td>DOTA Summit 8</td>
-                  <td>Fanatic</td>
-                  <td>1 : 3 </td>
-                  <td>$60,000</td>
-                </tr>
-                <tr>
-                  <td>2017-08-09</td>
-                  <td>9 - 12th</td>
+                  <td>2016-12-10</td>
+                  <td>3 - 4th</td>
                   <td>Premier</td>
-                  <td>The International 2017</td>
+                  <td>The Boston Major 2016</td>
                   <td>Digital Chaos</td>
                   <td>0 : 2</td>
-                  <td>$370,319</td>
+                  <td>$250,000</td>
                 </tr>
                 <tr>
-                  <td>2016-09-11</td>
+                  <td>2016-08-13</td>
+                  <td>2nd</td>
+                  <td>Premier</td>
+                  <td>The International 2016</td>
+                  <td>Digital Chaos</td>
+                  <td>1 : 3</td>
+                  <td>$3,427,130</td>
+                </tr>
+                <tr>
+                  <td>2016-03-06</td>
                   <td>1st</td>
-                  <td>Major</td>
-                  <td>MPGL Southeast Asian Championship</td>
-                  <td>Execration</td>
-                  <td>2 : 0 </td>
-                  <td>$30,000</td>
+                  <td>Premier</td>
+                  <td>The Shanghai Major 2016</td>
+                  <td>Team Secret</td>
+                  <td>3 : 1 </td>
+                  <td>$1,110,000</td>
+                </tr>
+                <tr>
+                  <td>2015-11-21</td>
+                  <td>2nd</td>
+                  <td>Premier</td>
+                  <td>The Frankfurt Major 2015</td>
+                  <td>Team Secret</td>
+                  <td>1 : 3 </td>
+                  <td>$405,000</td>
+                </tr>
+                <tr>
+                  <td>2015-11-01</td>
+                  <td>1st</td>
+                  <td>Premier</td>
+                  <td>Nanyang Dota 2 Championships </td>
+                  <td>Team Secret</td>
+                  <td>3 : 2</td>
+                  <td>$105,688</td>
+                </tr>
+                <tr>
+                  <td>2015-10-18</td>
+                  <td>1st</td>
+                  <td>Premier</td>
+                  <td>MLG World Finals</td>
+                  <td>Team Secret</td>
+                  <td>3 : 1 </td>
+                  <td>$113,982</td>
                 </tr>
               </tbody>
             </Table>

@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Card, Navbar, Nav, Col } from "react-bootstrap";
-import { Button, Container, NavDropdown, Row } from "react-bootstrap";
-import "../design/home.css";
-class home extends Component {
+import { Navbar, Nav, Col, Row } from "react-bootstrap";
+import { Button, Card, NavDropdown, Container } from "react-bootstrap";
+class naplayers extends Component {
   render() {
     return (
-      <body>
+      <div className="body">
         <Navbar bg="dark" variant="dark">
           <img
             width="30"
@@ -25,7 +24,9 @@ class home extends Component {
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/">North America</NavDropdown.Item>
+              <NavDropdown.Item href="/naplayers">
+                North America
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar>
@@ -33,13 +34,10 @@ class home extends Component {
           <Row id="homerow">
             <Col>
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src={require("../images/SEA-region.jpg")}
-                />
+                <Card.Img variant="top" src={require("../images/sumail.jpg")} />
                 <Card.Body>
-                  <Card.Title>South east Asia Region</Card.Title>
-                  <Button block href="/seaplayers" variant="secondary" position>
+                  <Card.Title>Sumail</Card.Title>
+                  <Button block href="/sumail" variant="secondary" position>
                     Enter
                   </Button>
                 </Card.Body>
@@ -48,13 +46,10 @@ class home extends Component {
 
             <Col>
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src={require("../images/NA-region.jpg")}
-                />
+                <Card.Img variant="top" src={require("../images/bsj.jpg")} />
                 <Card.Body>
-                  <Card.Title>North America Region</Card.Title>
-                  <Button href="/naplayers" block variant="secondary">
+                  <Card.Title>BSJ</Card.Title>
+                  <Button href="/bsj" block variant="secondary">
                     Enter
                   </Button>
                 </Card.Body>
@@ -62,13 +57,10 @@ class home extends Component {
             </Col>
             <Col>
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src={require("../images/eu-region.jpg")}
-                />
+                <Card.Img variant="top" src={require("../images/ppd.jpg")} />
                 <Card.Body>
-                  <Card.Title>Europe Region</Card.Title>
-                  <Button href="/europeplayers" block variant="secondary">
+                  <Card.Title>PPD</Card.Title>
+                  <Button href="/ppd" block variant="secondary">
                     Enter
                   </Button>
                 </Card.Body>
@@ -76,9 +68,9 @@ class home extends Component {
             </Col>
           </Row>
         </Container>
-      </body>
+      </div>
     );
   }
 }
 
-export default home;
+export default naplayers;

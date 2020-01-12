@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Col, Row } from "react-bootstrap";
 import { Button, Card, NavDropdown, Container } from "react-bootstrap";
-import "../design/europeplayers.css";
 class europeplayers extends Component {
   render() {
     return (
