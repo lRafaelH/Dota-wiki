@@ -86,7 +86,7 @@ class ppd extends Component {
               [21][22]
             </p>
             <h2>Achievements</h2>
-            <Table striped bordered hover>
+            <Table variant="dark" striped bordered hover>
               <thead>
                 <tr>
                   <th>Date</th>

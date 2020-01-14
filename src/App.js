@@ -14,6 +14,7 @@ import naplayers from "./components/pages/naplayers";
 import sumail from "./components/pages/seaplayers/sumail";
 import ppd from "./components/pages/seaplayers/ppd";
 import bsj from "./components/pages/seaplayers/bsj";
+import search from "./components/pages/search";
 class App extends Component {
   render() {
     return (
@@ -32,6 +33,7 @@ class App extends Component {
           <Route exact path="/sumail" component={sumail} />
           <Route exact path="/ppd" component={ppd} />
           <Route exact path="/bsj" component={bsj} />
+          <Route exact path="/search" component={search} />
         </Switch>
       </Router>
     );

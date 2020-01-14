@@ -21,7 +21,7 @@ class home extends Component {
           <Nav className="mr-auto">
             {" "}
             <Nav.Link href="#home">Money Ranking</Nav.Link>
-            <Nav.Link href="#link">Search</Nav.Link>
+            <Nav.Link href="/search">Search</Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>

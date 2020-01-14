@@ -60,7 +60,7 @@ class march extends Component {
               2019 with Team Jinesbrus, he went to a coach Fnatic.
             </p>
             <h2>Achievements</h2>
-            <Table striped bordered hover>
+            <Table variant="dark" striped bordered hover>
               <thead>
                 <tr>
                   <th>Date</th>
