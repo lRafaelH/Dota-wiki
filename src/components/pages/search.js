@@ -5,14 +5,127 @@ class search extends Component {
   constructor() {
     super();
     this.state = {
-      searchInput: ""
+      searchInput: "",
+      players: [
+        {
+          name: "Abed",
+          imageSource: "AbedSea",
+          link: "abed"
+        },
+        {
+          name: "Meracle",
+          imageSource: "meracle",
+          link: "meracle"
+        },
+        {
+          name: "March",
+          imageSource: "MarchSea",
+          link: "march"
+        },
+        {
+          name: "BSJ",
+          imageSource: "bsj",
+          link: "bsj"
+        },
+        {
+          name: "Sumail",
+          imageSource: "sumail",
+          link: "sumail"
+        },
+        {
+          name: "W33",
+          imageSource: "w33",
+          link: "w33"
+        },
+        {
+          name: "Topson",
+          imageSource: "topson",
+          link: "topson"
+        },
+        {
+          name: "Miracle",
+          imageSource: "Miracle",
+          link: "miracle"
+        },
+        {
+          name: "Ppd",
+          imageSource: "ppd",
+          link: "ppd"
+        }
+      ]
     };
+
+    this.playersList = [
+      {
+        name: "Abed",
+        imageSource: "AbedSea",
+        link: "abed"
+      },
+      {
+        name: "Meracle",
+        imageSource: "meracle",
+        link: "meracle"
+      },
+      {
+        name: "March",
+        imageSource: "MarchSea",
+        link: "march"
+      },
+      {
+        name: "BSJ",
+        imageSource: "bsj",
+        link: "bsj"
+      },
+      {
+        name: "Sumail",
+        imageSource: "sumail",
+        link: "sumail"
+      },
+      {
+        name: "W33",
+        imageSource: "w33",
+        link: "w33"
+      },
+      {
+        name: "Topson",
+        imageSource: "topson",
+        link: "topson"
+      },
+      {
+        name: "Miracle",
+        imageSource: "Miracle",
+        link: "miracle"
+      },
+      {
+        name: "Ppd",
+        imageSource: "ppd",
+        link: "ppd"
+      }
+    ];
   }
 
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
     });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    if (this.state.searchInput === "") {
+      this.setState({
+        players: this.playersList
+      });
+    } else {
+      let searchedPlayer = this.playersList.filter(
+        player => player.name.toLowerCase() === this.state.searchInput
+      );
+
+      this.setState({
+        players: searchedPlayer
+      });
+    }
   };
 
   render() {
@@ -32,7 +145,7 @@ class search extends Component {
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link data-toggle="modal" data-target="#mymodal">
+            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
               Search
             </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
@@ -46,184 +159,54 @@ class search extends Component {
         </Navbar>
         <br></br>
         <Container>
-          <InputGroup id="myinput" type="text" className="mb-3">
-            <FormControl
-              placeholder="Search by name..."
-              aria-label="Search by name..."
-              aria-describedby="basic-addon2"
-              onChange={this.handleChange}
-              value={this.state.searchInput}
-              name="searchInput"
-            />
-            <InputGroup.Append>
-              <Button variant="secondary">Button</Button>
-            </InputGroup.Append>
-          </InputGroup>
-          {/* <form class="form-inline">
-            <button
-              type="button"
-              class="btn btn-primary btn-lg mr-3"
-              id="btnSort"
-            >
-              Sort
-            </button>
+          <form class="form-inline" onSubmit={this.handleSubmit}>
             <input
               class="form-control form-control-lg mr-sm-2"
               type="search"
               placeholder="Type a name"
               aria-label="Search"
-              id="search"
-            ></input>
-          </form> */}
+              name="searchInput"
+              onChange={this.handleChange}
+              value={this.state.searchInput}
+            ></input>{" "}
+            <button
+              class="btn btn-primary btn-lg mr-3"
+              id="btnSort"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
         </Container>
         <div class="card-deck">
           <Container>
-            <Row id="homerow">
-              <Col>
+            <div>
+              {this.state.players.map(player => (
                 <Card
-                  id="abed"
+                  className="cards"
                   bg="dark"
                   text="white"
                   style={{ width: "18rem" }}
                 >
                   <Card.Img
+                    height="250"
                     variant="top"
-                    src={require("../images/AbedSea.jpg")}
+                    src={require(`../images/${player.imageSource}.jpg`)}
                   />
                   <Card.Body>
-                    <Card.Title className="names">Abed</Card.Title>
-                    <Button block href="/abed" variant="secondary" position>
-                      Enter
+                    <Card.Title>{player.name}</Card.Title>
+                    <Button
+                      block
+                      href={`/${player.link}`}
+                      variant="secondary"
+                      position
+                    >
+                      More Info
                     </Button>
                   </Card.Body>
                 </Card>
-              </Col>
-
-              <Col>
-                <Card
-                  id="meracle"
-                  bg="dark"
-                  text="white"
-                  style={{ width: "18rem" }}
-                >
-                  <Card.Img
-                    height="300"
-                    variant="top"
-                    src={require("../images/meracle.jpg")}
-                  />
-                  <Card.Body>
-                    <Card.Title>Meracle</Card.Title>
-                    <Button href="/meracle" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card
-                  id="march"
-                  bg="dark"
-                  text="white"
-                  style={{ width: "18rem" }}
-                >
-                  <Card.Img
-                    variant="top"
-                    src={require("../images/MarchSea.jpg")}
-                  />
-                  <Card.Body>
-                    <Card.Title>March</Card.Title>
-                    <Button href="/march" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <Row id="homerow">
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img
-                    variant="top"
-                    src={require("../images/sumail.jpg")}
-                  />
-                  <Card.Body>
-                    <Card.Title>Sumail</Card.Title>
-                    <Button block href="/sumail" variant="secondary" position>
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={require("../images/bsj.jpg")} />
-                  <Card.Body>
-                    <Card.Title>BSJ</Card.Title>
-                    <Button href="/bsj" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={require("../images/ppd.jpg")} />
-                  <Card.Body>
-                    <Card.Title>PPD</Card.Title>
-                    <Button href="/ppd" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <Row id="homerow">
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img
-                    variant="top"
-                    src={require("../images/topson.jpg")}
-                  />
-                  <Card.Body>
-                    <Card.Title>Topson</Card.Title>
-                    <Button block href="/Topson" variant="secondary" position>
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img
-                    variant="top"
-                    src={require("../images/Miracle.jpg")}
-                  />
-                  <Card.Body>
-                    <Card.Title>Miracle</Card.Title>
-                    <Button href="/miracle" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card bg="dark" text="white" style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={require("../images/w33.jpg")} />
-                  <Card.Body>
-                    <Card.Title>W33</Card.Title>
-                    <Button href="/w33" block variant="secondary">
-                      Enter
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
+              ))}
+            </div>
           </Container>
         </div>
       </body>

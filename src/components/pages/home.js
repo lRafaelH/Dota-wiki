@@ -20,12 +20,15 @@ class home extends Component {
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link href="#home">Money Ranking</Nav.Link>
-            <Nav.Link href="/search">Search</Nav.Link>
+            <Nav.Link data-toggle="modal" data-target="#mymodal" href="/search">
+              Search
+            </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/">North America</NavDropdown.Item>
+              <NavDropdown.Item href="/naplayers">
+                North America
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar>

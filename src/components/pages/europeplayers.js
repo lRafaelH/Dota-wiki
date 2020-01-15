@@ -19,12 +19,15 @@ class europeplayers extends Component {
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link href="#home">Money Ranking</Nav.Link>
-            <Nav.Link href="#link">Search</Nav.Link>
+            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
+              Search
+            </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/">North America</NavDropdown.Item>
+              <NavDropdown.Item href="/naplayers">
+                North America
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar>
@@ -36,7 +39,7 @@ class europeplayers extends Component {
                 <Card.Body>
                   <Card.Title>Topson</Card.Title>
                   <Button block href="/Topson" variant="secondary" position>
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>
@@ -51,7 +54,7 @@ class europeplayers extends Component {
                 <Card.Body>
                   <Card.Title>Miracle</Card.Title>
                   <Button href="/miracle" block variant="secondary">
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>
@@ -62,7 +65,7 @@ class europeplayers extends Component {
                 <Card.Body>
                   <Card.Title>W33</Card.Title>
                   <Button href="/w33" block variant="secondary">
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>

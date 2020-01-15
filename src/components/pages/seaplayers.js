@@ -13,19 +13,22 @@ class seaplayers extends Component {
             className="d-inline-block
             align-top"
             alt="Dota-2-Log"
-            src={require("../images/dota-2-icon.png")}
+            src={require("../../components/images/dota-2-icon.png")}
           />{" "}
           <Navbar.Brand id="logonav" href="/">
             Dota Players Wiki
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link href="#home">Money Ranking</Nav.Link>
-            <Nav.Link href="#link">Search</Nav.Link>
+            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
+              Search
+            </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/">North America</NavDropdown.Item>
+              <NavDropdown.Item href="/naplayers">
+                North America
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar>
@@ -40,7 +43,7 @@ class seaplayers extends Component {
                 <Card.Body>
                   <Card.Title>Abed</Card.Title>
                   <Button block href="/abed" variant="secondary" position>
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>
@@ -55,7 +58,7 @@ class seaplayers extends Component {
                 <Card.Body>
                   <Card.Title>Meracle</Card.Title>
                   <Button href="/meracle" block variant="secondary">
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>
@@ -69,7 +72,7 @@ class seaplayers extends Component {
                 <Card.Body>
                   <Card.Title>March</Card.Title>
                   <Button href="/march" block variant="secondary">
-                    Enter
+                    More info
                   </Button>
                 </Card.Body>
               </Card>
