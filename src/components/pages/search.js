@@ -5,16 +5,16 @@ class search extends Component {
   constructor() {
     super();
     this.state = {
-      filtered: []
+      searchInput: ""
     };
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
+  handleChange = e => {
     this.setState({
-      filtered: nextProps.productList
+      [e.target.name]: e.target.value
     });
-  }
+  };
+
   render() {
     return (
       <body>
@@ -32,35 +32,34 @@ class search extends Component {
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link href="#home">Money Ranking</Nav.Link>
             <Nav.Link data-toggle="modal" data-target="#mymodal">
               Search
             </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
               <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/">North America</NavDropdown.Item>
+              <NavDropdown.Item href="/naplayers">
+                North America
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar>
         <br></br>
         <Container>
-          {/* <InputGroup
-            id="myinput"
-            type="text"
-            onKeyUp="searchfilter()"
-            className="mb-3"
-          >
+          <InputGroup id="myinput" type="text" className="mb-3">
             <FormControl
               placeholder="Search by name..."
               aria-label="Search by name..."
               aria-describedby="basic-addon2"
+              onChange={this.handleChange}
+              value={this.state.searchInput}
+              name="searchInput"
             />
             <InputGroup.Append>
               <Button variant="secondary">Button</Button>
             </InputGroup.Append>
-          </InputGroup> */}
-          <form class="form-inline">
+          </InputGroup>
+          {/* <form class="form-inline">
             <button
               type="button"
               class="btn btn-primary btn-lg mr-3"
@@ -75,7 +74,7 @@ class search extends Component {
               aria-label="Search"
               id="search"
             ></input>
-          </form>
+          </form> */}
         </Container>
         <div class="card-deck">
           <Container>
@@ -92,7 +91,7 @@ class search extends Component {
                     src={require("../images/AbedSea.jpg")}
                   />
                   <Card.Body>
-                    <Card.Title>Abed</Card.Title>
+                    <Card.Title className="names">Abed</Card.Title>
                     <Button block href="/abed" variant="secondary" position>
                       Enter
                     </Button>
