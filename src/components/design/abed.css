@@ -62,3 +62,11 @@ tr,
 td {
   color: white;
 }
+
+.link:hover {
+  color: black;
+}
+
+.link:visited {
+  color: black;
+}

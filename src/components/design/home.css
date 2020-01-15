@@ -24,3 +24,11 @@ body {
   margin-bottom: 0.75rem;
   text-align: center;
 }
+
+link {
+  text-decoration-line: none;
+}
+
+link:hover {
+  text-decoration-line: none;
+}
