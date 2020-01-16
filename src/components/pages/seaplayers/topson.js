@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Col, Row } from "react-bootstrap";
 import { Table, Card, NavDropdown, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../../design/topson.css";
 class topson extends Component {
   render() {
@@ -15,21 +16,33 @@ class topson extends Component {
             alt="Dota-2-Log"
             src={require("../../images/dota-2-icon.png")}
           />{" "}
-          <Navbar.Brand id="logonav" href="/">
-            Dota Players Wiki
+          <Navbar.Brand id="logonav">
+            <Link className="link" to="/">
+              Dota Players Wiki
+            </Link>
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
-              Search
+            <Nav.Link>
+              <Link className="link" to="/search">
+                Search
+              </Link>
             </Nav.Link>
-            <NavDropdown title="Regions" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
-              <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/naplayers">
-                North America
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link className="link" to="/seaplayers">
+                SEA
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/europeplayers">
+                Europe
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/naplayers">
+                NA
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
         <div id="cont">

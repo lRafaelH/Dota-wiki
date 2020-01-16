@@ -25,10 +25,15 @@ body {
   text-align: center;
 }
 
-link {
-  text-decoration-line: none;
+.link:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-link:hover {
-  text-decoration-line: none;
+.link:visited {
+  text-decoration: none;
+}
+
+.link {
+  color: white;
 }

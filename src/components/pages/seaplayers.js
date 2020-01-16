@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Col, Row } from "react-bootstrap";
 import { Button, Card, NavDropdown, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../design/seaplayers.css";
 class seaplayers extends Component {
   render() {
@@ -13,23 +14,35 @@ class seaplayers extends Component {
             className="d-inline-block
             align-top"
             alt="Dota-2-Log"
-            src={require("../../components/images/dota-2-icon.png")}
+            src={require("../images/dota-2-icon.png")}
           />{" "}
-          <Navbar.Brand id="logonav" href="/">
-            Dota Players Wiki
+          <Navbar.Brand id="logonav">
+            <Link className="link" to="/">
+              Dota Players Wiki
+            </Link>
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
-              Search
+            <Nav.Link>
+              <Link className="link" to="/search">
+                Search
+              </Link>
             </Nav.Link>
-            <NavDropdown title="Regions" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
-              <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/naplayers">
-                North America
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link className="link" to="/seaplayers">
+                SEA
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/europeplayers">
+                Europe
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/naplayers">
+                NA
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
         <Container>
@@ -38,13 +51,16 @@ class seaplayers extends Component {
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
                 <Card.Img
                   variant="top"
+                  alt="abed"
                   src={require("../images/AbedSea.jpg")}
                 />
                 <Card.Body>
                   <Card.Title>Abed</Card.Title>
-                  <Button block href="/abed" variant="secondary" position>
-                    More info
-                  </Button>
+                  <Link className="link" to="/abed">
+                    <Button block variant="secondary">
+                      More info
+                    </Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -53,13 +69,16 @@ class seaplayers extends Component {
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
                 <Card.Img
                   variant="top"
+                  alt="meracle"
                   src={require("../images/meracle.jpg")}
                 />
                 <Card.Body>
                   <Card.Title>Meracle</Card.Title>
-                  <Button href="/meracle" block variant="secondary">
-                    More info
-                  </Button>
+                  <Link className="link" to="/meracle">
+                    <Button block variant="secondary">
+                      More info
+                    </Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -67,13 +86,16 @@ class seaplayers extends Component {
               <Card bg="dark" text="white" style={{ width: "18rem" }}>
                 <Card.Img
                   variant="top"
+                  alt="march"
                   src={require("../images/MarchSea.jpg")}
                 />
                 <Card.Body>
                   <Card.Title>March</Card.Title>
-                  <Button href="/march" block variant="secondary">
-                    More info
-                  </Button>
+                  <Link className="link" to="/march">
+                    <Button block variant="secondary">
+                      More info
+                    </Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>

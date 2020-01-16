@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Col, Row } from "react-bootstrap";
+import { Navbar, Col, Row } from "react-bootstrap";
 import { Table, Card, NavDropdown, Container } from "react-bootstrap";
 import "../../design/abed.css";
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 class abed extends Component {
   render() {
     return (
@@ -23,28 +24,26 @@ class abed extends Component {
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link data-toggle="modal" data-target="#mymodal">
+            <Nav.Link>
               <Link className="link" to="/search">
                 Search
               </Link>
             </Nav.Link>
-            <NavDropdown title="Regions" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link className="link" to="/seaplayers">
-                  SEA
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="link" to="/europlayers">
-                  Europe
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link className="link" to="/naplayers">
-                  North America
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link className="link" to="/seaplayers">
+                SEA
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/europeplayers">
+                Europe
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/naplayers">
+                NA
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
         <div id="cont">

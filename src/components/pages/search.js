@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FormControl, Navbar, Nav, Col, Container } from "react-bootstrap";
 import { Button, Card, InputGroup, NavDropdown, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 class search extends Component {
   constructor() {
     super();
@@ -140,21 +141,33 @@ class search extends Component {
             alt="Dota-2-Log"
             src={require("../images/dota-2-icon.png")}
           />{" "}
-          <Navbar.Brand id="logonav" href="/">
-            Dota Players Wiki
+          <Navbar.Brand id="logonav">
+            <Link className="link" to="/">
+              Dota Players Wiki
+            </Link>
           </Navbar.Brand>
           <Nav className="mr-auto">
             {" "}
-            <Nav.Link data-toggle="modal" href="/search" data-target="#mymodal">
-              Search
+            <Nav.Link>
+              <Link className="link" to="/search">
+                Search
+              </Link>
             </Nav.Link>
-            <NavDropdown title="Regions" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/seaplayers">SEA</NavDropdown.Item>
-              <NavDropdown.Item href="/europeplayers">Europe</NavDropdown.Item>
-              <NavDropdown.Item href="/naplayers">
-                North America
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link className="link" to="/seaplayers">
+                SEA
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/europeplayers">
+                Europe
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="link" to="/naplayers">
+                NA
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
         <br></br>
@@ -195,14 +208,16 @@ class search extends Component {
                   />
                   <Card.Body>
                     <Card.Title>{player.name}</Card.Title>
-                    <Button
-                      block
-                      href={`/${player.link}`}
-                      variant="secondary"
-                      position
-                    >
-                      More Info
-                    </Button>
+                    <Link to={`/${player.link}`}>
+                      <Button
+                        block
+                        // href={`/${player.link}`}
+                        variant="secondary"
+                        position
+                      >
+                        More Info
+                      </Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               ))}
