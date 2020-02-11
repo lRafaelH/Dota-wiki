@@ -1,9 +1,27 @@
 import React, { Component } from "react";
-import { Card, Navbar, Nav, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { Button, Container, NavDropdown, Row } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Col,
+  Container,
+  Nav,
+  Navbar,
+  Row
+} from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
 import "../design/home.css";
 class home extends Component {
+  componentDidMount() {
+    if (!this.props.authenticated) {
+      this.props.history.replace("/login");
+    }
+  }
+
+  componentDidUpdate() {
+    if (!this.props.authenticated) {
+      this.props.history.replace("/login");
+    }
+  }
   render() {
     return (
       <body>
@@ -97,4 +115,4 @@ class home extends Component {
   }
 }
 
-export default home;
+export default withRouter(home);

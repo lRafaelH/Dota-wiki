@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Col, Row } from "react-bootstrap";
-import { Button, Card, NavDropdown, Container } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Col,
+  Container,
+  Nav,
+  Navbar,
+  Row
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../design/seaplayers.css";
 class seaplayers extends Component {

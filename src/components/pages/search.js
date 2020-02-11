@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { FormControl, Navbar, Nav, Col, Container } from "react-bootstrap";
-import { Button, Card, InputGroup, NavDropdown, Row } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 class search extends Component {
   constructor() {

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Navbar, Nav, Col, Row } from "react-bootstrap";
-import { Table, Card, NavDropdown, Container } from "react-bootstrap";
-import "../../design/miracle.css";
+import { Nav, Navbar, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "../../design/miracle.css";
 class miracle extends Component {
   render() {
     return (

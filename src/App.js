@@ -1,26 +1,31 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import europeplayers from "./components/pages/europeplayers";
 import home from "./components/pages/home.js";
+import Login from "./components/pages/Login";
+import naplayers from "./components/pages/naplayers";
+import register from "./components/pages/register";
 import seaplayers from "./components/pages/seaplayers";
 import abed from "./components/pages/seaplayers/abed";
-import meracle from "./components/pages/seaplayers/meracle";
-import march from "./components/pages/seaplayers/march";
-import europeplayers from "./components/pages/europeplayers";
-import topson from "./components/pages/seaplayers/topson";
-import miracle from "./components/pages/seaplayers/miracle";
-import w33 from "./components/pages/seaplayers/w33";
-import naplayers from "./components/pages/naplayers";
-import sumail from "./components/pages/seaplayers/sumail";
-import ppd from "./components/pages/seaplayers/ppd";
 import bsj from "./components/pages/seaplayers/bsj";
+import march from "./components/pages/seaplayers/march";
+import meracle from "./components/pages/seaplayers/meracle";
+import miracle from "./components/pages/seaplayers/miracle";
+import ppd from "./components/pages/seaplayers/ppd";
+import sumail from "./components/pages/seaplayers/sumail";
+import topson from "./components/pages/seaplayers/topson";
+import w33 from "./components/pages/seaplayers/w33";
 import search from "./components/pages/search";
+
 class App extends Component {
   render() {
     return (
       <Router>
         <Switch>
           <Route exact path="/" component={home} />
+          <Route exact path="/register" component={register} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/seaplayers" component={seaplayers} />
           <Route exact path="/abed" component={abed} />
           <Route exact path="/meracle" component={meracle} />

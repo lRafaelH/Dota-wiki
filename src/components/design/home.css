@@ -37,3 +37,63 @@ body {
 .link {
   color: white;
 }
+
+.box {
+  background: #343a40;
+  width: 300px;
+  border-radius: 6px;
+  margin: 0 auto 0 auto;
+  padding: 0px 0px 70px 0px;
+  border: #343a40 4px solid;
+}
+
+.hlogin {
+  font-size: 1.5em;
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+#logint {
+  background: #ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 1em;
+  border-radius: 4px;
+  display: block;
+}
+
+#passt {
+  border-radius: 4px;
+  background: #ecf0f1;
+  border: #ccc 1px solid;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 8px;
+  width: 250px;
+  font-size: 1em;
+  display: block;
+}
+
+#signin {
+  width: 125px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 16px;
+}
+
+#signup {
+  width: 125px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 16px;
+}
