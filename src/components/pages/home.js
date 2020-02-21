@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {
   Button,
   Card,
@@ -16,12 +16,17 @@ class home extends Component {
       this.props.history.replace("/login");
     }
   }
-
   componentDidUpdate() {
     if (!this.props.authenticated) {
       this.props.history.replace("/login");
     }
   }
+
+  logout = () => {
+    this.props.setAuthenticated(false);
+    this.props.history.replace("/");
+  };
+
   render() {
     return (
       <body>
@@ -61,6 +66,7 @@ class home extends Component {
                 NA
               </Link>
             </Nav.Link>
+            <Button onClick={this.logout}>test</Button>
           </Nav>
         </Navbar>
         <Container>

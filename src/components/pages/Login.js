@@ -4,23 +4,6 @@ import { Button, Nav, Navbar } from "react-bootstrap";
 import { Link, withRouter } from "react-router-dom";
 
 class Login extends Component {
-  // state = {
-  //   username: "",
-  //   password: ""
-  // };
-  // handleSubmit = event => {
-  //   event.preventDefault();
-
-  //   const user = {
-  //     username: this.state.username
-  //   };
-
-  //   axios.post("localhost:8080/test/login", { user }).then(res => {
-  //     console.log(res);
-  //     console.log(res.data);
-  //   });
-  // };
-
   state = {
     username: "",
     password: ""
@@ -34,15 +17,15 @@ class Login extends Component {
     this.setState({ password: event.target.value });
   };
 
-  quas = () => {
+  quas = e => {
     axios
       .post("http://localhost:8080/test/login", {
         username: this.state.username,
         password: this.state.password
       })
-      .then((response: AxiosResponse<T>) => {
+      .then(response => {
         this.props.setAuthenticated(true);
-        this.props.history.push("/home");
+        this.props.history.push("/");
       })
       .catch(err => {
         alert(err.response.data);
@@ -87,7 +70,12 @@ class Login extends Component {
             name="password"
             placeholder="password"
           />
-          <Button onClick={this.quas} id="signin" variant="success">
+          <Button
+            onClick={this.quas}
+            id="signin"
+            type="submit"
+            variant="success"
+          >
             Sign In
           </Button>
           <Link to="/register">
